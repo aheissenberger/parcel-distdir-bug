@@ -1,7 +1,7 @@
 {
   "name": "parcel-distdir",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "maindist/index.js",
   "license": "MIT",
   "private": true,
   "devDependencies": {
