@@ -14,14 +14,6 @@ let bundler = new Parcel({
     defaultConfig: createRequire(import.meta.url).resolve( "@parcel/config-default"),
     defaultTargetOptions: {
         distDir: path.join(__dirname, "output"),
-        engines: {
-            "node": ">=14.x"
-        },
-        outputFormat: 'commonjs',
-        shouldOptimize: false,
-        isLibrary: false,
-        shouldScopeHoist: false,
-        sourceMap: false
     },
     mode: "production",
 });
