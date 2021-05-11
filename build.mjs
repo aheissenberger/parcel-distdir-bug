@@ -12,6 +12,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 let bundler = new Parcel({
     entries: path.join(__dirname, "/index.mjs"),
     defaultConfig: createRequire(import.meta.url).resolve( "@parcel/config-default"),
+    targets: {
+        main: {
+            distDir:path.join(__dirname, "output"),
+        }
+    },
     defaultTargetOptions: {
         distDir: path.join(__dirname, "output"),
     },
